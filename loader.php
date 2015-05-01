@@ -5,7 +5,8 @@
 require( dirname( __FILE__ ) . '/dss-config.php' );
 //Set up the Error Level:
 if(ERROR_REPORTING == "on"){
-	error_reporting(-1);	
+	error_reporting(-1);
+	ini_set('display_errors', true);	
 }elseif(ERROR_REPORTING == "off"){
 	error_reporting(0);
 }else{
@@ -22,8 +23,5 @@ require( dirname( __FILE__ ) . '/dss-includes/autoloader.php' );
 
 //Load The Theme
 require( dirname( __FILE__ ) . '/dss-content/themes/'.ACTTHEME.'/index.php' );
-$test = new site;
-$test->dss_print_nav();
-$test->dss_print_site();
-$test->dss_print_news();
+
 ?>

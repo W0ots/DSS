@@ -8,6 +8,9 @@ define("SITEPATH", "/DSS/");
 //Setting of the Error Reporting. Values: on, off
 define("ERROR_REPORTING","on");
 
+//front page (alias)
+define("FRONTPAGE", "home");
+
 //Enable debug list (Values: true, false(
 define("DEBUGMODE", "true");
 
@@ -24,7 +27,11 @@ define("MYSQL_DATABASE", "dss");
 //MYSQL Prefix not implement yet
 define("MYSQL_PREFIX", "dss_");
 
+//Is News Site?
+define("NEWS","TRUE");
 //IF NEws site:
 //Entrys per site
 define("EPS", "2");
+//On which page news?
+define("NEWSPAGE", "home");
 ?>

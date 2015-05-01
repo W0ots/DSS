@@ -5,6 +5,9 @@ $gen = new General;
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title><?php $gen->dss_sitename() ?></title>
 </head>
+<?php
+$test->dss_print_nav();
+?>

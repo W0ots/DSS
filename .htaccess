@@ -1,4 +1,4 @@
 RewriteEngine on 
 RewriteRule ^site/(.*) index.php?site=$1
-ErrorDocument 404 /index.php?site=404
-ErrorDocument 403 /index.php?site=403
+ErrorDocument 404 /DSS/site/404
+ErrorDocument 403 /DSS/site/403
